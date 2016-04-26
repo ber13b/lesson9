@@ -1,7 +1,7 @@
 /*
     Program Name:   Seminole Weather Channel
-    Author: 
-    Date: 
+    Author: Brandon Rhea
+    Date: 4/24/2016
     Filename:   apixu_forecast.js
 */
 
@@ -32,7 +32,7 @@
                  (https://www.apixu.com)
                  Use the following code as an example:
                    
-                     url: 'https://api.apixu.com/v1/forecast.json?key=ADD_YOUR_API_KEY_HERE',
+                     https://www.apixu.com/api-explorer.aspx?key=58dd5085d9a941d0aeb230214162504
                      
                      
                 IMPORTANT:  Before proceeding to Activity 2, save your Cloud9 workspace and preview this application 
@@ -75,7 +75,7 @@
                 var message = 'q=' + $('#searchValue').val()+'&days=3';   
                 $.ajax({
                       type: 'GET',
-                      url: 'https://api.apixu.com/v1/forecast.json?key=ADD_YOUR_API_KEY_HERE',
+                      url: 'https://www.apixu.com/api-explorer.aspx?key=58dd5085d9a941d0aeb230214162504',
                       data: message             
                 })
                 .done(function(json){
